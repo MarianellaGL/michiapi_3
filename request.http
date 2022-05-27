@@ -1,0 +1,35 @@
+###
+
+GET http://localhost:9000/gatitos HTTP/1.1
+
+###
+GET http://localhost:9000/gatitos/3 HTTP/1.1
+
+###
+
+
+POST  http://localhost:9000/gatitos HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id":3,
+    "nombre": "Manolo",
+    "raza": "Bengala",
+    "aniosVida": 18,
+    "description": "Naranja con manchas negras",
+    "random": "Es pariente de los michis salvajes! rawr!"
+}
+
+###
+
+DELETE  http://localhost:9000/gatitos/3 HTTP/1.1
+
+###
+
+PUT  http://localhost:9000/gatitos/1 HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "description": "Gris con negro y marron"
+}
